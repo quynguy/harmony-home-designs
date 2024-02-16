@@ -2,6 +2,7 @@
 
 :root {
     --green: #AFE1AF;
+    --text: #054d12;
 }
 
 *{
@@ -117,6 +118,30 @@ header nav ul li a:hover {
 }
 
 
+.home .counting {
+    min-height: 40vh;
+    padding: 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.home .counting .box {
+    margin: 2rem 4rem;
+    text-align: center;
+}
+
+
+.home .counting .box .count {
+    font-size: 7rem;
+    color: #444;
+}
+
+.home .counting .box h3 {
+    font-size: 2rem;
+    color: green;
+}
 
 
 /* media queries */
@@ -176,3 +201,15 @@ header nav ul li a:hover {
 
 }
 
+
+@media (max-width: 400px) {
+    .home .hero .heading {
+        font-size: 3.5rem;
+        width: 35rem;
+    }
+
+    .home .hero .subheading {
+        font-size: 3.5rem;
+        width: 35rem;
+    }
+}
