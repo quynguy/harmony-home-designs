@@ -73,7 +73,9 @@ header nav ul li a:hover {
     display: none;
 }
 
-
+.fa-times {
+    transform: rotate(180deg);
+}
 
 
 
@@ -131,6 +133,10 @@ header nav ul li a:hover {
         background: #93cc96;
         color: #fff;
     }
+
+    .header .nav-toggle (
+        right: 0%;
+    )
 
 }
 
