@@ -8,6 +8,8 @@ app.set('view engine', 'ejs');
 
 // static folder path
 app.use(express.static("public"));
+app.use(express.static("src"));
+
 
 // routes 
 app.get("/", (req, res) => {
