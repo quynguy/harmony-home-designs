@@ -44,10 +44,11 @@ body {
 
 .header .logo h1 {
     font-weight: 700;
-    font-family: 'Crimson Text', serif;
+    font-family: 'Italiana', serif;
     color: var(--green);
     font-size: 4rem;
     text-shadow: 2px 2px 2px #054d12;
+    letter-spacing: .5rem;
 }
 
 
