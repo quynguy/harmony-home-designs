@@ -23,6 +23,19 @@ body {
     overflow-x: hidden;
 }
 
+.heading {
+    font-size: 4rem;
+    text-align: center;
+    letter-spacing: 1rem;
+    color: #444;
+    margin: 2rem 0;
+    padding-top: 6rem;
+    /* text-decoration: underline; */
+    /* text-decoration-style: solid; */
+    /* text-decoration-color: var(--green); */
+    text-underline-offset: -1.4rem;
+}
+
 .header {
     display: flex;
     align-items: center;
@@ -141,8 +154,69 @@ header nav ul li a:hover {
 
 .home .counting .box h3 {
     font-size: 2rem;
-    color: green;
+    color: rgb(101, 149, 101);
 }
+
+
+/* about section */
+
+.about {
+    min-height: 100vh;
+    padding-bottom: 3rem;
+}
+
+
+.about .image {
+    padding: 2rem;
+}
+
+.about .image img {
+    height: 45rem;
+    object-fit: cover;
+    box-shadow: 1.5rem 1.5rem 0 1.5rem rgb(100, 110, 101);
+}
+
+.about .info {
+    padding: 2rem;
+    margin-top: 3rem;
+}
+
+.about .info h2 {
+    color: rgb(101, 149, 101);
+    font-size: 3rem;
+}
+
+.about .info p {
+    font-size: 1.4rem;
+    color: #444;
+    margin: 2rem 0;
+}
+
+
+.about .info .icons a {
+    font-size: 2rem;
+    height: 4rem;
+    width:4rem;
+    line-height: 4rem;
+    text-align: center;
+    background: #333;
+    color: #fff;
+    border-radius: .5rem;
+    margin-right: 1rem;
+    text-decoration: none;
+}
+
+
+.about .info .icons a:hover {
+    background: rgb(101, 149, 101);
+}
+
+
+
+
+
+
+
 
 
 /* media queries */
