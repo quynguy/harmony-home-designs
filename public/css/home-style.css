@@ -58,9 +58,9 @@ body {
 .header .logo h1 {
     font-weight: 700;
     font-family: 'Italiana', serif;
-    color: var(--green);
+    color: #C9D5B5;
     font-size: 4rem;
-    text-shadow: 2px 2px 2px #054d12;
+    text-shadow: 2px 2px 2px #4E3D42;
     letter-spacing: .5rem;
 }
 
@@ -85,7 +85,7 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    color: #93cc96;
+    color: #C9D5B5;
     font-size: 2rem;
 }
 
@@ -114,7 +114,7 @@ header nav ul li a:hover {
 .home .hero .heading {
     font-size: 5rem;
     width: 45rem;
-    background: #fff;
+    background: #E3DBDB;
     padding: 1rem 2rem;
     text-align: center;
     opacity: .8;
@@ -123,12 +123,12 @@ header nav ul li a:hover {
 .home .hero .subheading {
     font-size: 2rem;
     width: 35rem;
-    background: var(--green);
+    background: #C9D5B5;
     padding: 1rem 2rem;
     text-align: center;
     opacity: .9;
     margin-top: 1rem;
-    color: #080808;
+    color: #4E3D42;
 }
 
 
@@ -154,7 +154,7 @@ header nav ul li a:hover {
 
 .home .counting .box h3 {
     font-size: 2rem;
-    color: rgb(101, 149, 101);
+    color: #C9D5B;
 }
 
 
@@ -173,7 +173,7 @@ header nav ul li a:hover {
 .about .image img {
     height: 45rem;
     object-fit: cover;
-    box-shadow: 1.5rem 1.5rem 0 1.5rem rgb(100, 110, 101);
+    box-shadow: 1.5rem 1.5rem 0 1.5rem #E3DBDB;
 }
 
 .about .info {
@@ -208,13 +208,45 @@ header nav ul li a:hover {
 
 
 .about .info .icons a:hover {
-    background: rgb(101, 149, 101);
+    background: #9F9F92;
 }
 
 
+/* services container */
 
+.services {
+    min-height: 100vh;
+}
 
+.services .box-container {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
 
+.services .box-container .box {
+    height: 25rem;
+    width: 25rem;
+    box-shadow:  0 1rem 1rem #E3DBDB;
+    border-left: .5rem solid #9F9F92;
+    border-right: .5rem solid #9F9F92;
+    border-radius: .5rem;
+    text-align: center;
+    padding-top: 6rem;
+    margin: 2rem 3rem;
+}
+
+.services .box-container .box .fas {
+    color: #C9D5B5;
+    font-size: 5rem;
+}
+
+.services .box-container .box p {
+    color: #333;
+    font-size: 1.1rem;
+    margin: 2rem 0;
+}
 
 
 
