@@ -226,8 +226,8 @@ header nav ul li a:hover {
 }
 
 .services .box-container .box {
-    height: 25rem;
-    width: 25rem;
+    height: 30rem;
+    width: 28rem;
     box-shadow:  0 1rem 1rem #E3DBDB;
     border-left: .5rem solid #9F9F92;
     border-right: .5rem solid #9F9F92;
@@ -244,11 +244,12 @@ header nav ul li a:hover {
 
 .services .box-container .box p {
     color: #333;
-    font-size: 1.1rem;
-    margin: 2rem 0;
+    font-size: 1.5rem;
+    margin: 2rem 1rem;
 }
 
 
+/* projects gallery section */
 
 
 /* media queries */
