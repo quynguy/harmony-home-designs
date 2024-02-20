@@ -45,6 +45,8 @@ $(document).ready(function() {
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 2000,
+        prevArrow: false,
+        nextArrow: false,
         responsive: [
           {
             breakpoint: 360,
@@ -53,9 +55,16 @@ $(document).ready(function() {
               slidesToScroll: 1
             }
           }
-        ]
+        ]   
       });
-      
 
+
+    $('.about-item').wrap('<div class="card"></div>');
+
+     $('.about-card-group').css({
+    'display': 'flex',
+    'justify-content': 'space-between'
+    });
+      
 
 });
