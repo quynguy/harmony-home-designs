@@ -43,7 +43,7 @@ body {
 }
 
 .header .logo  {
-    height: 5rem;
+    height: 4.1rem;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -211,7 +211,6 @@ header nav ul li a:hover {
 /* services container */
 
 .services {
-    min-height: 100vh;
     background: #E3DBDB;
 }
 
@@ -244,6 +243,17 @@ header nav ul li a:hover {
     font-size: 1.5rem;
     margin: 3rem 2rem;
 }
+
+.slick-prev, .slick-next {
+    width: 10rem; 
+    font-size: 2rem;
+}
+
+.slick-next{
+    margin-bottom: 20px;
+}
+
+
 
 
 /* projects gallery section */
@@ -300,7 +310,7 @@ header nav ul li a:hover {
 }
 
 .contact-box-container .contact-box {
-    height: 15rem;
+    height: 13rem;
     flex: 1 0 30rem;
     margin: 2rem;
     box-shadow: 0 .3rem .5rem rgba(0,0,0,.2);
@@ -323,7 +333,6 @@ header nav ul li a:hover {
 
 .contact .form-container {
     width: 90%;
-    box-shadow: 0 .3rem .5rem rgba(0,0,0,.2);
     border-radius: .5rem;
     padding: 1rem 3rem;
     margin-bottom: 2rem;
@@ -373,6 +382,100 @@ header nav ul li a:hover {
 }
 
 
+/* footer section */
+.footer .logo {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.footer .list {
+    display: flex;
+    flex-flow: column;
+}
+
+.footer .list a {
+    font-size: 1.4rem;
+}
+
+
+.footer h3 {
+    height: 5rem;
+    justify-content: space-around;
+    margin: 0 1.5rem;
+    text-decoration: none;
+    font-size: 3rem;
+    text-shadow: 2px 2px 2px #4E3D42;
+}
+
+
+.footer h2 {
+    font-size: 2rem;
+    margin-top: 1.5rem;
+}
+
+.footer h1 {
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+
+.footer p {
+    font-size: 1.4rem;
+}
+
+.footer .letter p {
+    font-size: 2rem;
+}
+
+.footer .letter input[type="email"] {
+    font-size: 1.5rem;
+    outline: none;
+    border: none;
+    background: none;
+    padding: 0 1rem;
+    color: #fff;
+    height: 3rem;
+    width: 100%;
+    border: .1rem solid #923535;
+    font-size: 1.5rem;
+}
+
+.footer .letter input[type="submit"] {
+    font-size: 1.5rem;
+    outline: none;
+    border: none;
+    background: #d17979;
+    margin: 1rem 0;
+    width: 100%;
+    font-size: 1.5rem;
+}
+
+.footer .letter input[type="submit"]:hover {
+    opacity: 90%;
+}
+
+
+.credit {
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 1.5rem;
+    text-decoration: none;
+    font-size: 1.5rem;
+    
+}
+
+.credit span {
+    color: green;
+    font-weight: 700;
+}
+
+.credit a {
+    text-decoration: none;
+}
+
+
 
 
 
@@ -393,7 +496,6 @@ header nav ul li a:hover {
         position: fixed;
         top: 6rem;
         right: -120%;
-        right: 0;
         height: calc(100vh - 6rem);
         width: 100vw;
         background: rgba(0,0,0,.5);
@@ -428,9 +530,9 @@ header nav ul li a:hover {
         color: #fff;
     }
 
-    .header .nav-toggle (
-        right: 0%;
-    )
+    .header .nav-toggle {
+        right: 0;
+    }
 
 }
 
@@ -446,3 +548,19 @@ header nav ul li a:hover {
         width: 35rem;
     }
 }
+
+
+
+@media (max-width: 360px) {
+
+    .about .image {
+        padding: 1rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .footer h3 {
+        text-align: center;
+    }
+}
+
