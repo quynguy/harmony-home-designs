@@ -129,73 +129,7 @@ header nav ul li a:hover {
 }
 
 
-/* services container */
 
-.services-container {
-    text-align: center;
-    color: #444;
-    text-underline-offset: -1.4rem;
-}
-
-.services-container h1 {
-    font-size: 4rem;
-}
-
-
-
-.faq {
-    padding: 2rem;
-}
-
-.faq-container {
-    display: flex;
-    flex-direction: row;
-    width: calc(33%-22px);
-}
-
-.faq-container details {
-    width: 100%;
-    height: auto;
-    margin-bottom: 20px;
-}
-
-.faq-container.two {
-    margin-top: 2rem;
-
-}
-
-details {
-    background-color: #9bc1bc;
-    color: black;
-    font-size: 2.0rem;
-    margin-top: 2rem;
-}
-
-summary {
-    padding: .5em 1.3rem;
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    transition: height 1s ease;
-    background-color:#ead7c3;
-}
-
-summary::-webkit-details-marker {
-    display: none;
-} 
-
-summary:after {
-    content: "\002B";
-} 
-
-details[open] div {
-    padding: .5em 1em;
-}
-
-.faq-container img {
-    width: 375px;
-    height: auto;
-}
 
 
 
@@ -261,6 +195,33 @@ details[open] div {
 }
 
 
+/* .footer .letter input[type="email"] {
+    font-size: 1.5rem;
+    outline: none;
+    border: none;
+    background: none;
+    padding: 0 1rem;
+    color: #fff;
+    height: 3rem;
+    width: 100%;
+    border: .1rem solid #923535;
+    font-size: 1.5rem;
+}
+
+.footer .letter input[type="submit"] {
+    font-size: 1.5rem;
+    outline: none;
+    border: none;
+    background: #d17979;
+    margin: 1rem 0;
+    width: 100%;
+    font-size: 1.5rem;
+}
+
+.footer .letter input[type="submit"]:hover {
+    opacity: 90%;
+} */
+
 
 .credit {
     height: 5rem;
@@ -288,9 +249,8 @@ details[open] div {
 
 
 
+/* media queries */
 
-
-/*media queries*/
 @media (max-width: 768px) {
     html {
         font-size: 50%;
@@ -303,7 +263,7 @@ details[open] div {
 
     .header nav {
         position: fixed;
-        top: 10rem;
+        top: 6rem;
         right: -120%;
         height: calc(100vh - 6rem);
         width: 100vw;
@@ -356,13 +316,22 @@ details[open] div {
         font-size: 3.5rem;
         width: 35rem;
     }
-
-    .why-choose-us .about-flex {
-        display: flex;
-        flex-wrap: wrap-reverse;
-        justify-content: center;
-        align-items: center;
-    }
 }
 
+
+
+@media (max-width: 360px) {
+
+    .about .image {
+        padding: 1rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .footer h3 {
+        text-align: center;
+    }
+
+
+}
 
