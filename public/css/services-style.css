@@ -182,8 +182,13 @@ details[open] div {
     padding: .5em 1em;
 }
 
+.faq-container.images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .faq-container img {
-    width: 375px;
+    width: 32%;
     height: auto;
 }
 
@@ -253,7 +258,11 @@ details[open] div {
 
 
 .footer p {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
+}
+
+.footer .list a {
+    font-size: 1.5rem;
 }
 
 
@@ -270,7 +279,7 @@ details[open] div {
 }
 
 .credit span {
-    color: green;
+    color: rgb(244, 245, 244);
     font-weight: 700;
 }
 
@@ -279,7 +288,12 @@ details[open] div {
     space: .5rem;
 }
 
-
+.credit a {
+    font-size: 2rem;
+    color: white;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
 
 
 
@@ -331,12 +345,16 @@ details[open] div {
     }
 
     .header nav ul li a:hover {
-        background: #93cc96;
+        background: #427aa1;
         color: #fff;
     }
 
+    header nav ul li a {
+        color: black;
+    }
+
     .header .nav-toggle {
-        right: 0;
+        right: 0%;
     }
 
 }
@@ -359,6 +377,65 @@ details[open] div {
         justify-content: center;
         align-items: center;
     }
+
+    .faq .faq-container {
+        display: block;
+    }
+
+    .faq-container.images {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+
+    }
+
+    .faq-container.images img {
+        width: 100%;
+        height: auto;
+    }
+
+
+    .credit {
+        font-size: 2rem;
+    }
+    .credit a span{
+        font-size: 2rem;
+        color: white;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
 }
 
 
+@media only screen
+and (min-device-width : 360px)
+and (max-device-width : 480px) {
+
+    header nav ul li a {
+        color: black;
+    }
+
+    /* services */
+
+    .faq .faq-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+
+
+    }
+
+    .faq-container details {
+        width: 100%;
+    }
+
+    .faq-container.images img {
+        width: 100%;
+        height: auto;
+    }
+
+}

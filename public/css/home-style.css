@@ -545,7 +545,7 @@ header nav ul li a:hover {
     }
 
     .header nav ul li a:hover {
-        background: #93cc96;
+        background: #427aa1;
         color: #fff;
     }
 
@@ -570,7 +570,13 @@ header nav ul li a:hover {
 
 
 
-@media (max-width: 360px) {
+@media only screen
+and (min-device-width : 360px)
+and (max-device-width : 480px) {
+
+    header nav ul li a {
+        color: black;
+    }
 
     .about .image {
         padding: 1rem;
@@ -578,10 +584,34 @@ header nav ul li a:hover {
         margin-right: 1rem;
     }
 
+    /*footer section*/
+    
     .footer h3 {
         text-align: center;
     }
+    
+    .footer h2 {
+        font-size: 2rem;
+        font-weight: 700;
+    }
 
+    .footer p {
+        font-size: 2rem;
+    }
+
+    .footer .list a {
+        font-size: 2rem;
+    }
+
+    .credit {
+        font-size: 2rem;
+    }
+    .credit a span{
+        font-size: 2rem;
+        color: white;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
 
 }
 

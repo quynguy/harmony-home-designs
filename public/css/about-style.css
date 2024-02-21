@@ -398,7 +398,7 @@ header nav ul li a:hover {
     }
 
     .header nav ul li a:hover {
-        background: #93cc96;
+        background: #427aa1;
         color: #fff;
     }
 
@@ -409,15 +409,16 @@ header nav ul li a:hover {
 }
 
 
-@media (max-width: 400px) {
-    .home .hero .heading {
-        font-size: 3.5rem;
-        width: 35rem;
+@media only screen
+and (min-device-width : 360px)
+and (max-device-width : 480px) {
+
+    header nav ul li a {
+        color: black;
     }
 
-    .home .hero .subheading {
-        font-size: 3.5rem;
-        width: 35rem;
+    .header .nav-toggle {
+        right: 20%;
     }
 
     .why-choose-us .about-flex {
@@ -426,6 +427,12 @@ header nav ul li a:hover {
         justify-content: center;
         align-items: center;
     }
+
+    .header .nav-toggle {
+        right: 0%;
+    }
+
+
 }
 
 

@@ -406,7 +406,7 @@ header nav ul li a:hover {
     }
 
     .header nav ul li a:hover {
-        background: #93cc96;
+        background: #427aa1;
         color: #fff;
     }
 
@@ -431,7 +431,9 @@ header nav ul li a:hover {
 
 
 
-@media (max-width: 360px) {
+@media only screen
+and (min-device-width : 360px)
+and (max-device-width : 480px) {
 
     /*nav bar*/
 
