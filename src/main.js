@@ -41,10 +41,10 @@ $(document).ready(function() {
     })
 
     $('.carousel').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
+        slidesToShow: 2,
+        slidesToScroll: 2,
         autoplay: true,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 4000,
         prevArrow: false,
         nextArrow: false,
         responsive: [
@@ -65,7 +65,16 @@ $(document).ready(function() {
     'display': 'flex',
     'justify-content': 'space-between'
     });
-      
+
+
+    $('.about-team-card').wrap('<div class="team"></div>');
+
+     $('.team-wrapper').css({
+    'display': 'flex',
+    'justify-content': 'space-between',
+
+    
+    });
 
 });
 

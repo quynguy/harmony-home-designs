@@ -23,11 +23,15 @@ body {
 }
 
 .about-topper {
+    margin: 0 auto;
     font-size: 4rem;
-    background-color: rgb(179, 218, 179);
+    background-color: #ebf2fa;
     width: 90%;
     text-align: center;
+    color: #064789;
+    font-weight: 700;
 }
+
 
 /* header section & header container */
 @keyframes flash {
@@ -37,7 +41,7 @@ body {
 }
 
 .promo-container {
-    background: #AFE1AF;
+    background: #edf6f9;
     height: 4rem;
     text-align: center;
     padding: 1rem;
@@ -65,7 +69,7 @@ body {
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    background: #fff;
+    background: #427aa1;
     z-index: 100;
     padding: 1rem 2rem;
 }
@@ -84,13 +88,10 @@ body {
 .header .logo h1 {
     font-weight: 700;
     font-family: 'Italiana', serif;
-    color: #C9D5B5;
+    color: #ebf2fa;
     font-size: 4rem;
     text-shadow: 2px 2px 2px #4E3D42;
     letter-spacing: .5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 
@@ -109,12 +110,12 @@ header nav ul li {
 
 header nav ul li a {
     font-size: 2rem;
-    color: #666;
+    color: #fdfbfb;
     text-decoration: none;
 }
 
 header nav ul li a:hover {
-    color: #C9D5B5;
+    color: black;
     font-size: 2rem;
 }
 
@@ -150,7 +151,7 @@ header nav ul li a:hover {
 
 
 .why-choose-us .about-title {
-    margin-top: 1rem;
+    margin-top: 3rem;
     text-align: center;
     font-weight: 700;
 }
@@ -161,10 +162,11 @@ header nav ul li a:hover {
     margin-top: 3rem;
 }
 
-/* about wrapper container */
+
+/* about wrapper container - steps */
 
 .about-flex .about-topper.steps {
-    margin-top: 4rem;
+    margin-top: 5rem;
 }
 
 
@@ -176,15 +178,21 @@ header nav ul li a:hover {
     font-size: 1.5rem;
 }
 
+.about-h3 {
+    font-size: 1.5rem;
+    color: #064789;
+    font-weight: 700;
+}
 
-/* about jquery cards */
+
+/* about - steps  jquery cards */
 .card {
     border: 1px solid #eee8e8;
     border-radius: 5px;
     padding: 20px;
     width: calc(33% - 10px);
     box-sizing: border-box;
-    background-color: #f9f9f9;
+    background-color:#ebf2fa;
     height: 20rem;
 }
   
@@ -194,15 +202,70 @@ header nav ul li a:hover {
 }
 
 
-/* footer section */
+/* about wrapper container - team */
+
+
+.about-flex .about-topper.designers {
+    display: flex;
+    width: 84%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+
+.team {
+    border: 1px solid #eee8e8;
+    border-radius: 5px;
+    padding: 20px;
+    width: calc(33% - 10px);
+    box-sizing: border-box;
+    background-color:#ebf2fa;
+    height: 55rem;
+    margin-top: 5rem;
+    text-align: center;
+}
+
+
+.team-card.name img {
+    width: 200px;
+    border-radius: 76%;
+    object-fit: cover;
+    height: auto;
+    margin-top: 1rem;
+}
+
+.team-card.text p {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    color: #064789;
+}
+
+.name h1 {
+    color: #064789;
+    font-weight: 700;
+}
+
+.team-card.text button {
+    border-radius: 16px;
+    background-color: #427aa1;
+    color: white;
+    font-size: 1.5rem;
+    padding: .5rem 1.5rem;
+    margin-top: 2rem;
+    width: 15rem;
+}
+
+.team-card.text button:hover {
+    background-color: #ebf2fa;
+    color: black;
+}
 
 /* footer section */
-
-
-
 .footer {
-    background: #9F9F92;
+    background: #427aa1;
     padding-top: 2rem;
+    color: white;
 }
 
 .footer .row .col-md-3 h3 {
@@ -256,6 +319,10 @@ header nav ul li a:hover {
     font-size: 1.4rem;
 }
 
+.list a {
+    text-decoration: none;
+    color: white;
+}
 
 
 .credit {

@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
 
-:root {
-    --green: #AFE1AF;
-    --text: #054d12;
-}
 
 *{
     margin: 0;
@@ -22,13 +18,6 @@ body {
     overflow-x: hidden;
 }
 
-.about-topper {
-    font-size: 4rem;
-    background-color: rgb(179, 218, 179);
-    width: 90%;
-    text-align: center;
-}
-
 /* header section & header container */
 @keyframes flash {
     0% { opacity: 1; } /* Fully visible */
@@ -37,7 +26,7 @@ body {
 }
 
 .promo-container {
-    background: #AFE1AF;
+    background: #ebf2fa;
     height: 4rem;
     text-align: center;
     padding: 1rem;
@@ -52,6 +41,7 @@ body {
 .heading {
     font-size: 4rem;
     text-align: center;
+    letter-spacing: 1rem;
     color: #444;
     margin: 2rem 0;
     padding-top: 6rem;
@@ -64,7 +54,7 @@ body {
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    background: #fff;
+    background: #427aa1;
     z-index: 100;
     padding: 1rem 2rem;
 }
@@ -83,13 +73,10 @@ body {
 .header .logo h1 {
     font-weight: 700;
     font-family: 'Italiana', serif;
-    color: #C9D5B5;
+    color: #ebf2fa;
     font-size: 4rem;
     text-shadow: 2px 2px 2px #4E3D42;
     letter-spacing: .5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 
@@ -108,12 +95,12 @@ header nav ul li {
 
 header nav ul li a {
     font-size: 2rem;
-    color: #666;
+    color: #fdfbfb;
     text-decoration: none;
 }
 
 header nav ul li a:hover {
-    color: #C9D5B5;
+    color: black;
     font-size: 2rem;
 }
 
@@ -139,6 +126,8 @@ header nav ul li a:hover {
 
 .services-container h1 {
     font-size: 4rem;
+    margin-top: 4rem;
+    font-weight: 700;
 }
 
 
@@ -165,7 +154,7 @@ header nav ul li a:hover {
 }
 
 details {
-    background-color: #9bc1bc;
+    background-color: #ebf2fa;
     color: black;
     font-size: 2.0rem;
     margin-top: 2rem;
@@ -177,7 +166,8 @@ summary {
     display: flex;
     justify-content: space-between;
     transition: height 1s ease;
-    background-color:#ead7c3;
+    background-color: #427aa1;
+    color: white;
 }
 
 summary::-webkit-details-marker {
@@ -205,8 +195,14 @@ details[open] div {
 
 
 .footer {
-    background: #9F9F92;
+    background: #427aa1;
     padding-top: 2rem;
+    color: white;
+}
+
+.list a {
+    text-decoration: none;
+    color: white;
 }
 
 .footer .row .col-md-3 h3 {
