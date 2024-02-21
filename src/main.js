@@ -68,14 +68,34 @@ $(document).ready(function() {
 
 
     $('.about-team-card').wrap('<div class="team"></div>');
+    function adjustTeamWrapper() {
+        var screenWidth = $(window).width();
+        var cardWidth = $('.about-team-card').width();
+        var parentWidth = $('.about-team-card').parent().width();
+        var cardWidthPercentage = (cardWidth / parentWidth) * 100;
+        console.log('Screen width:', screenWidth);
+        if (screenWidth >= 360 && screenWidth <= 480) {
+            console.log('Setting display to block');
+            $('.team-wrapper').css('display', 'block');
+            $('.about-team-card').css('width', '100%'); // Adjust width to 100%
+            console.log('About-team-card width:', cardWidthPercentage + '%');
+        } else {
+            console.log('Setting display to flex');
+            $('.team-wrapper').css({
+                'display': 'flex',
+                'justify-content': 'space-between'
+            });
+            // Reset the width of the about-team-card to its default value (unset)
+            $('.about-team-card').css('width', ''); 
+        }
+    }
 
-     $('.team-wrapper').css({
-    'display': 'flex',
-    'justify-content': 'space-between',
+    adjustTeamWrapper();
+
+    $(window).resize(adjustTeamWrapper); 
+    console.log("Adjust Team Wrapper function is called after window resize event.");
 
     
-    });
-
 });
 
 

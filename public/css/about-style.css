@@ -227,6 +227,7 @@ header nav ul li a:hover {
 }
 
 
+
 .team-card.name img {
     width: 200px;
     border-radius: 76%;
@@ -432,6 +433,25 @@ and (max-device-width : 480px) {
         right: 0%;
     }
 
+    .team-card {
+        width: 100% !important; 
+    }
+
+    .team-card.name img {
+        width: 100%;
+    }
+
+    .team-card.text p {
+        font-size: 1rem;
+    }
+
+    .team-card.text button {
+        width: 100%;
+    }
+
+    .name h1 {
+        font-size: 1.5rem;
+    }
 
 }
 
