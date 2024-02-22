@@ -379,6 +379,12 @@ header nav ul li a:hover {
     space: .5rem;
 }
 
+.credit a span{
+    font-size: 2rem;
+    color: white;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
 
 
 
