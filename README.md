@@ -15,7 +15,7 @@ Harmony Home Designs, a simulated interior design service provider, is built usi
 
 
 # Deployment 
-Harmony Home Designs is deployed on render. Check it out <a href="https://https://harmony-home-designs.onrender.com/">here.</a> <br> <br>
+Harmony Home Designs is deployed on render. Check it out <a href="https://harmony-home-designs.onrender.com/">here.</a> <br> <br>
 ![image](https://github.com/quynguy/harmony-home-designs/assets/106893103/bb9074df-b3b7-43d6-b28e-cedff69d5a3e)
 
 ![image](https://github.com/quynguy/harmony-home-designs/assets/106893103/0c1dd86a-eb2d-4849-84c6-42615548d532)
