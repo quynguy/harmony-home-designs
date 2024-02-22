@@ -363,6 +363,11 @@ header nav ul li a:hover {
 /* media queries */
 
 @media (max-width: 768px) {
+
+    header nav ul li a {
+        color: black;
+    }
+    
     html {
         font-size: 50%;
     }
@@ -412,6 +417,7 @@ header nav ul li a:hover {
 
     .header .nav-toggle {
         right: 0;
+        margin-top: 4.1rem;
     }
 
 }

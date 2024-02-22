@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
 
-:root {
-    --green: #AFE1AF;
-    --text: #054d12;
-}
 
 *{
     margin: 0;
@@ -163,104 +159,155 @@ header nav ul li a:hover {
 }
 
 
-/* about wrapper container - steps */
 
-.about-flex .about-topper.steps {
-    margin-top: 5rem;
+
+/* icons container */
+.icons-container {
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 1.5rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
 }
 
+.icons-container .icons {
+    background: #f9f9fa;
+    border: .1rem solid rgba(0, 0, 0, .1);
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    flex: 1 1 25rem;
+}
 
-.about-icon-wrapper .about-icon {
+.icons-container .icons .emoji {
+    height: 5rem;
+    margin-right: 2rem;
     font-size: 4rem;
 }
 
-.about-text-group .about-item-text {
+.icons-container .icons h3 {
+    color: #333;
+    padding-bottom: .5rem;
     font-size: 1.5rem;
 }
 
-.about-h3 {
-    font-size: 1.5rem;
-    color: #064789;
-    font-weight: 700;
+.icons-container .icons span {
+    color: #555;
+    font-size: 1.3rem;
 }
 
 
-/* about - steps  jquery cards */
-.card {
-    border: 1px solid #eee8e8;
-    border-radius: 5px;
-    padding: 20px;
-    width: calc(33% - 10px);
-    box-sizing: border-box;
-    background-color:#ebf2fa;
-    height: 20rem;
-}
-  
-.about-card-group {
-    list-style-type: none;
-    margin-top: 2.5rem;
-}
-
-
-/* about wrapper container - team */
-
-
-.about-flex .about-topper.designers {
+/* designers container */
+.products .box-container {
     display: flex;
-    width: 84%;
-    justify-content: center;
-    align-items: center;
-    margin-top: 5rem;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 3rem;
+}
+
+.products .box-container .box {
+    flex: 1 1 30rem;
+    box-shadow: 0 .5rem 1.5rem rgb(0, 0, 0, .1);
+    border-radius: .5rem;
+    border: .1rem solid rgba(0,0,0.1);
+    position: relative;
+}
+
+.products .box-container .box .discount {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    padding: .7rem 1 rem;
+    font-size: 2rem;
+    color: rgb(219, 131, 153);
+    background: rgba(225,51,153,.05);
+    z-index: 1;
+    border-radius: .5rem;
+}
+
+.products .box-container .box .image {
+    position: relative;
+    text-align: center;
+    padding-top: 2rem;
+    overflow: hidden;
+}
+
+.products .box-container .box .image img {
+    height: 25rem;
+    margin-top: 6rem;
+
+}
+
+.products .box-container .box:hover .image img {
+    transform: scale(1.1);
+}
+
+.products .box-container .box .image .icons {
+    position: absolute;
+    bottom: -7rem;
+    left: 0;
+    right: 0;
+    display: flex;
+}
+
+.products .box-container .box:hover .image .icons {
+    bottom: 0;
+
+}
+
+.products .box-container .box:hover .image .icons {
+    bottom: 0;
 }
 
 
-.team {
-    border: 1px solid #eee8e8;
-    border-radius: 5px;
-    padding: 20px;
-    width: calc(33% - 10px);
-    box-sizing: border-box;
-    background-color:#ebf2fa;
-    height: 55rem;
-    margin-top: 5rem;
+.products .box-container .box .image .icons a {
+    height: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    width: 50%;
+    background: rgb(219, 131, 153);
+    color: #fff;
+}
+
+.products .box-container .box .image .icons .cart-btn {
+    border-left: .1rem solid #fff7;
+    border-right: .1rem solid #fff7;
+    width: 100%;
+}
+
+
+.products .box-container .box .image .icons a:hover {
+    background: #333;
+}
+
+.products .box-container .box  .content {
+    padding: 2rem;
     text-align: center;
 }
 
-
-
-.team-card.name img {
-    width: 200px;
-    border-radius: 76%;
-    object-fit: cover;
-    height: auto;
-    margin-top: 1rem;
+.products .box-container .box  .content h3 {
+    font-size: 2.5rem;
+    color: #333;
 }
 
-.team-card.text p {
-    margin-top: 2rem;
+.products .box .content .price {
+    font-size: 2.5rem;
+    color: rgb(219, 131, 153);
+    font-weight: bolder;
+    padding-top: 1rem;
+}
+
+.products .box-container .content .price span {
     font-size: 1.5rem;
-    color: #064789;
+    color: #999;
+    font-weight: lighter;
+    text-decoration: line-through;
 }
 
-.name h1 {
-    color: #064789;
-    font-weight: 700;
-}
 
-.team-card.text button {
-    border-radius: 16px;
-    background-color: #427aa1;
-    color: white;
-    font-size: 1.5rem;
-    padding: .5rem 1.5rem;
-    margin-top: 2rem;
-    width: 15rem;
-}
 
-.team-card.text button:hover {
-    background-color: #ebf2fa;
-    color: black;
-}
 
 /* footer section */
 .footer {
@@ -355,11 +402,15 @@ header nav ul li a:hover {
 
 
 /*media queries*/
-@media (max-width: 768px) {
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+
+
+
     html {
         font-size: 50%;
     }
-
     
     .header .fa-bars {
         display: block;
@@ -385,6 +436,10 @@ header nav ul li a:hover {
         float: right;
     }
 
+    header nav ul li a {
+        color: black;
+    }
+
     .header nav ul li {
         margin: 1rem 0;
     }
@@ -407,12 +462,32 @@ header nav ul li a:hover {
         right: 0;
     }
 
+    .team {
+        height: 75rem !important;
+        
+    }
+
+    .team-card.text  p{
+        font-size: 2rem;
+    }
+
+
+    .card {
+        height: 100% !important;
+    }
+
+    .about-item-text {
+        font-size: 2rem !important;
+    }
+
 }
 
 
 @media only screen
 and (min-device-width : 360px)
 and (max-device-width : 480px) {
+
+   
 
     header nav ul li a {
         color: black;
@@ -429,10 +504,6 @@ and (max-device-width : 480px) {
         align-items: center;
     }
 
-    .header .nav-toggle {
-        right: 0%;
-    }
-
     .team-card {
         width: 100% !important; 
     }
@@ -442,7 +513,7 @@ and (max-device-width : 480px) {
     }
 
     .team-card.text p {
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
 
     .team-card.text button {
@@ -452,6 +523,37 @@ and (max-device-width : 480px) {
     .name h1 {
         font-size: 1.5rem;
     }
+
+    .card {
+       display: block !important;
+       flex-direction: column !important;
+       width: 100% !important;
+       justify-content: space-between !important;
+       height: auto !important;
+       margin-top: 2rem !important;
+    }
+
+    .team {
+        display: block;
+        flex-direction: column !important;
+        width: 100% !important;
+        justify-content: space-between !important;
+        height: auto !important;
+    }
+
+    .about-topper.steps {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center!important;
+        width:95%;
+    
+    }
+   
+    .about-item-text,
+    .about-h3 {
+        font-size: 1.75rem !important;
+    }
+
 
 }
 
