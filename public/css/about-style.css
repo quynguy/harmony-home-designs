@@ -28,27 +28,6 @@ body {
     font-weight: 700;
 }
 
-
-/* header section & header container */
-@keyframes flash {
-    0% { opacity: 1; } /* Fully visible */
-    50% { opacity: 0; } /* Invisible */
-    100% { opacity: 1; } /* Fully visible */
-}
-
-.promo-container {
-    background: #edf6f9;
-    height: 4rem;
-    text-align: center;
-    padding: 1rem;
-}
-
-.promo-container h2 {
-    font-size: 1.5rem;
-    font-weight: 700;
-    animation: flash 1.5s infinite;
-}
-
 .heading {
     font-size: 4rem;
     text-align: center;
@@ -127,6 +106,26 @@ header nav ul li a:hover {
 }
 
 
+/* header section & header container */
+@keyframes flash {
+    0% { opacity: 1; } /* Fully visible */
+    50% { opacity: 0; } /* Invisible */
+    100% { opacity: 1; } /* Fully visible */
+}
+
+.promo-container {
+    background: #edf6f9;
+    height: 4rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+.promo-container h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    animation: flash 1.5s infinite;
+}
+
 /* why choose us section */
 
 .why-choose-us {
@@ -179,6 +178,7 @@ header nav ul li a:hover {
     display: flex;
     align-items: center;
     flex: 1 1 25rem;
+    margin-top: 2rem;
 }
 
 .icons-container .icons .emoji {
@@ -187,27 +187,28 @@ header nav ul li a:hover {
     font-size: 4rem;
 }
 
-.icons-container .icons h3 {
+.icons-container .icons .info h3 {
     color: #333;
     padding-bottom: .5rem;
     font-size: 1.5rem;
+    margin: 2rem 0;
 }
 
 .icons-container .icons span {
     color: #555;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
 }
 
 
 /* designers container */
-.products .box-container {
+.designers .box-container {
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem;
-    margin-top: 3rem;
+    margin-top: 4rem;
 }
 
-.products .box-container .box {
+.designers .box-container .box {
     flex: 1 1 30rem;
     box-shadow: 0 .5rem 1.5rem rgb(0, 0, 0, .1);
     border-radius: .5rem;
@@ -215,36 +216,25 @@ header nav ul li a:hover {
     position: relative;
 }
 
-.products .box-container .box .discount {
-    position: absolute;
-    top: 1rem;
-    left: 1rem;
-    padding: .7rem 1 rem;
-    font-size: 2rem;
-    color: rgb(219, 131, 153);
-    background: rgba(225,51,153,.05);
-    z-index: 1;
-    border-radius: .5rem;
-}
 
-.products .box-container .box .image {
+.designers .box-container .box .image {
     position: relative;
     text-align: center;
     padding-top: 2rem;
     overflow: hidden;
 }
 
-.products .box-container .box .image img {
+.designers .box-container .box .image img {
     height: 25rem;
     margin-top: 6rem;
 
 }
 
-.products .box-container .box:hover .image img {
+.designers .box-container .box:hover .image img {
     transform: scale(1.1);
 }
 
-.products .box-container .box .image .icons {
+.designers .box-container .box .image .icons {
     position: absolute;
     bottom: -7rem;
     left: 0;
@@ -252,54 +242,49 @@ header nav ul li a:hover {
     display: flex;
 }
 
-.products .box-container .box:hover .image .icons {
+.designers .box-container .box:hover .image .icons {
     bottom: 0;
 
 }
 
-.products .box-container .box:hover .image .icons {
+.designers .box-container .box:hover .image .icons {
     bottom: 0;
 }
 
 
-.products .box-container .box .image .icons a {
+.designers .box-container .box .image .icons a {
     height: 5rem;
     line-height: 5rem;
     font-size: 2rem;
     width: 50%;
-    background: rgb(219, 131, 153);
+    background: #427aa1;
     color: #fff;
-}
-
-.products .box-container .box .image .icons .cart-btn {
-    border-left: .1rem solid #fff7;
-    border-right: .1rem solid #fff7;
-    width: 100%;
+    text-decoration: none;
 }
 
 
-.products .box-container .box .image .icons a:hover {
-    background: #333;
+.designers .box-container .box .image .icons a:hover {
+    background: #427aa1;
 }
 
-.products .box-container .box  .content {
+.designers .box-container .box  .content {
     padding: 2rem;
     text-align: center;
 }
 
-.products .box-container .box  .content h3 {
+.designers .box-container .box  .content h3 {
     font-size: 2.5rem;
     color: #333;
 }
 
-.products .box .content .price {
+.designers .box .content .price {
     font-size: 2.5rem;
-    color: rgb(219, 131, 153);
+    color:#064789;
     font-weight: bolder;
     padding-top: 1rem;
 }
 
-.products .box-container .content .price span {
+.designers .box-container .content .price span {
     font-size: 1.5rem;
     color: #999;
     font-weight: lighter;
@@ -333,7 +318,6 @@ header nav ul li a:hover {
     display: flex;
     flex-flow: column;
 }
-
 
 
 .footer .list a {
@@ -373,6 +357,7 @@ header nav ul li a:hover {
 }
 
 
+
 .credit {
     height: 5rem;
     display: flex;
@@ -399,18 +384,17 @@ header nav ul li a:hover {
 
 
 
+/* media queries */
 
-
-/*media queries*/
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) {
-
-
-
+@media (max-width: 768px) {
+    header nav ul li a {
+        color: black;
+    }
+    
     html {
         font-size: 50%;
     }
+
     
     .header .fa-bars {
         display: block;
@@ -418,7 +402,7 @@ and (max-device-width : 1024px) {
 
     .header nav {
         position: fixed;
-        top: 10rem;
+        top: 6rem;
         right: -120%;
         height: calc(100vh - 6rem);
         width: 100vw;
@@ -434,10 +418,6 @@ and (max-device-width : 1024px) {
         flex-flow: column;
         justify-content: center;
         float: right;
-    }
-
-    header nav ul li a {
-        color: black;
     }
 
     .header nav ul li {
@@ -460,101 +440,84 @@ and (max-device-width : 1024px) {
 
     .header .nav-toggle {
         right: 0;
+        margin-top: 4.1rem;
     }
 
-    .team {
-        height: 75rem !important;
-        
+    .footer h3 {
+        text-align: center;
+    }
+    
+    .footer h2 {
+        font-size: 2rem;
+        font-weight: 700;
     }
 
-    .team-card.text  p{
+    .footer p {
         font-size: 2rem;
     }
 
-
-    .card {
-        height: 100% !important;
+    .footer .list a {
+        font-size: 2rem;
     }
 
-    .about-item-text {
-        font-size: 2rem !important;
+    .credit {
+        font-size: 2rem;
     }
+    .credit a span{
+        font-size: 2rem;
+        color: white;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
 
 }
+
+
 
 
 @media only screen
 and (min-device-width : 360px)
 and (max-device-width : 480px) {
 
-   
-
     header nav ul li a {
         color: black;
     }
 
-    .header .nav-toggle {
-        right: 20%;
+    .about .image {
+        padding: 1rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
     }
 
-    .why-choose-us .about-flex {
-        display: flex;
-        flex-wrap: wrap-reverse;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .team-card {
-        width: 100% !important; 
-    }
-
-    .team-card.name img {
-        width: 100%;
-    }
-
-    .team-card.text p {
-        font-size: 1.5rem;
-    }
-
-    .team-card.text button {
-        width: 100%;
-    }
-
-    .name h1 {
-        font-size: 1.5rem;
-    }
-
-    .card {
-       display: block !important;
-       flex-direction: column !important;
-       width: 100% !important;
-       justify-content: space-between !important;
-       height: auto !important;
-       margin-top: 2rem !important;
-    }
-
-    .team {
-        display: block;
-        flex-direction: column !important;
-        width: 100% !important;
-        justify-content: space-between !important;
-        height: auto !important;
-    }
-
-    .about-topper.steps {
-        display: flex !important;
-        justify-content: center !important;
-        align-items: center!important;
-        width:95%;
+    /*footer section*/
     
+    .footer h3 {
+        text-align: center;
     }
-   
-    .about-item-text,
-    .about-h3 {
-        font-size: 1.75rem !important;
+    
+    .footer h2 {
+        font-size: 2rem;
+        font-weight: 700;
     }
 
+    .footer p {
+        font-size: 2rem;
+    }
+
+    .footer .list a {
+        font-size: 2rem;
+    }
+
+    .credit {
+        font-size: 2rem;
+    }
+    .credit a span{
+        font-size: 2rem;
+        color: white;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
 
 }
-
 

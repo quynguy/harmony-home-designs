@@ -357,6 +357,33 @@ details[open] div {
         right: 0%;
     }
 
+    .footer h3 {
+        text-align: center;
+    }
+    
+    .footer h2 {
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+    .footer p {
+        font-size: 2rem;
+    }
+
+    .footer .list a {
+        font-size: 2rem;
+    }
+
+    .credit {
+        font-size: 2rem;
+    }
+    .credit a span{
+        font-size: 2rem;
+        color: white;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
 }
 
 

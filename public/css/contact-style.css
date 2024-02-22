@@ -420,20 +420,37 @@ header nav ul li a:hover {
         margin-top: 4.1rem;
     }
 
+    .footer h3 {
+        text-align: center;
+    }
+    
+    .footer h2 {
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+    .footer p {
+        font-size: 2rem;
+    }
+
+    .footer .list a {
+        font-size: 2rem;
+    }
+
+    .credit {
+        font-size: 2rem;
+    }
+    .credit a span{
+        font-size: 2rem;
+        color: white;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
 }
 
 
-@media (max-width: 400px) {
-    .home .hero .heading {
-        font-size: 3.5rem;
-        width: 35rem;
-    }
 
-    .home .hero .subheading {
-        font-size: 3.5rem;
-        width: 35rem;
-    }
-}
 
 
 

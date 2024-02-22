@@ -57,15 +57,6 @@ $(document).ready(function() {
           }
         ]   
       });
-
-
-    $('.about-item').wrap('<div class="card"></div>');
-
-
-
-    $('.about-team-card').wrap('<div class="team"></div>');
- 
-
     
 });
 
